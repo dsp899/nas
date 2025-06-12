@@ -1,0 +1,34 @@
+[
+    {
+        "sequence": [
+            1,
+            "lstm",
+            64,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7959291338920593,
+        "raw_reward": 0.2959291338920593,
+        "normalized_reward": 0.591858267665747
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            300,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.6408898234367371,
+        "raw_reward": 0.14088982343673706,
+        "normalized_reward": 0.2817796468171182
+    }
+]

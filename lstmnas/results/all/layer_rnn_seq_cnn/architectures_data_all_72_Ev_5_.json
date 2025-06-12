@@ -1,0 +1,2242 @@
+[
+    {
+        "sequence": [
+            "1",
+            "lstm",
+            "64",
+            "0",
+            "0",
+            "bidirectional",
+            "stateless",
+            "12",
+            "inceptionV3"
+        ],
+        "accuracy": 0.7977795600891113,
+        "raw_reward": 0.29777956008911133,
+        "normalized_reward": 0.5955591200591108
+    },
+    {
+        "sequence": [
+            "1",
+            "lstm",
+            "300",
+            "0",
+            "0",
+            "unidirectional",
+            "statefull",
+            "12",
+            "resnet50"
+        ],
+        "accuracy": 0.7086864113807678,
+        "raw_reward": 0.20868641138076782,
+        "normalized_reward": 0.4173728226780611
+    },
+    {
+        "sequence": [
+            "2",
+            "gru",
+            "700",
+            "16",
+            "0",
+            "bidirectional",
+            "stateless",
+            "3",
+            "resnet50"
+        ],
+        "accuracy": 0.7681733965873718,
+        "raw_reward": 0.2681733965873718,
+        "normalized_reward": 0.5363467930674742
+    },
+    {
+        "sequence": [
+            "1",
+            "gru",
+            "900",
+            "0",
+            "0",
+            "unidirectional",
+            "statefull",
+            "9",
+            "vgg16"
+        ],
+        "accuracy": 0.5463453531265259,
+        "raw_reward": 0.04634535312652588,
+        "normalized_reward": 0.09269070623451361
+    },
+    {
+        "sequence": [
+            "3",
+            "gru",
+            "16",
+            "16",
+            "64",
+            "bidirectional",
+            "stateless",
+            "6",
+            "vgg16"
+        ],
+        "accuracy": 0.45968806743621826,
+        "raw_reward": -0.24555811285972595,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            "3",
+            "lstm",
+            "512",
+            "128",
+            "700",
+            "bidirectional",
+            "statefull",
+            "9",
+            "inceptionV3"
+        ],
+        "accuracy": 0.7717161178588867,
+        "raw_reward": 0.0664699375629425,
+        "normalized_reward": 0.0942506877890845
+    },
+    {
+        "sequence": [
+            "1",
+            "lstm",
+            "8",
+            "0",
+            "0",
+            "unidirectional",
+            "stateless",
+            "9",
+            "vgg16"
+        ],
+        "accuracy": 0.16151203215122223,
+        "raw_reward": -0.543734148144722,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            "3",
+            "gru",
+            "32",
+            "300",
+            "700",
+            "unidirectional",
+            "statefull",
+            "6",
+            "inceptionV3"
+        ],
+        "accuracy": 0.7192796468734741,
+        "raw_reward": 0.014033466577529907,
+        "normalized_reward": 0.019898677890961624
+    },
+    {
+        "sequence": [
+            "1",
+            "gru",
+            "16",
+            "0",
+            "0",
+            "unidirectional",
+            "statefull",
+            "6",
+            "inceptionV3"
+        ],
+        "accuracy": 0.39671608805656433,
+        "raw_reward": -0.2553709279745817,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            "3",
+            "lstm",
+            "900",
+            "300",
+            "700",
+            "unidirectional",
+            "stateless",
+            "12",
+            "resnet50"
+        ],
+        "accuracy": 0.7739889025688171,
+        "raw_reward": 0.12190188653767109,
+        "normalized_reward": 0.1869411344223951
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            1024,
+            256,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.7731958627700806,
+        "raw_reward": 0.12110884673893452,
+        "normalized_reward": 0.18572497802130356
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            8,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.4573622941970825,
+        "raw_reward": -0.19472472183406353,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            128,
+            300,
+            64,
+            "unidirectional",
+            "stateless",
+            6,
+            "vgg16"
+        ],
+        "accuracy": 0.5537933111190796,
+        "raw_reward": -0.08276233617216344,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            700,
+            8,
+            8,
+            "unidirectional",
+            "stateless",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7034099698066711,
+        "raw_reward": 0.06685432251542811,
+        "normalized_reward": 0.10502510313028103
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            300,
+            16,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7303727269172668,
+        "raw_reward": 0.09381707962602381,
+        "normalized_reward": 0.14738236949198172
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            512,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.6986228823661804,
+        "raw_reward": 0.06206723507493739,
+        "normalized_reward": 0.09750480626368445
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.12923729419708252,
+        "raw_reward": -0.5178165756724774,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            16,
+            300,
+            256,
+            "bidirectional",
+            "statefull",
+            12,
+            "vgg16"
+        ],
+        "accuracy": 0.30349576473236084,
+        "raw_reward": -0.3435581051371991,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            64,
+            8,
+            16,
+            "bidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.6965371370315552,
+        "raw_reward": 0.04948326716199525,
+        "normalized_reward": 0.07647472561183065
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            1024,
+            8,
+            0,
+            "bidirectional",
+            "stateless",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.7253502607345581,
+        "raw_reward": 0.07829639086499818,
+        "normalized_reward": 0.12100443950467611
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            900,
+            300,
+            0,
+            "unidirectional",
+            "stateless",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8059740662574768,
+        "raw_reward": 0.2139398230966182,
+        "normalized_reward": 0.3613639338127833
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            32,
+            16,
+            64,
+            "bidirectional",
+            "stateless",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7853555083274841,
+        "raw_reward": 0.1933212651666255,
+        "normalized_reward": 0.3265373031496177
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            512,
+            64,
+            512,
+            "bidirectional",
+            "stateless",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8041236996650696,
+        "raw_reward": 0.21208945650421096,
+        "normalized_reward": 0.3582384953546705
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            1024,
+            256,
+            16,
+            "bidirectional",
+            "statefull",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7028601765632629,
+        "raw_reward": 0.11082593340240432,
+        "normalized_reward": 0.18719514059184725
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8022733330726624,
+        "raw_reward": 0.1554758540490644,
+        "normalized_reward": 0.24037795301820303
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            300,
+            8,
+            0,
+            "unidirectional",
+            "statefull",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.15545551478862762,
+        "raw_reward": -0.49134196423497034,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            32,
+            8,
+            128,
+            "unidirectional",
+            "stateless",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7221781611442566,
+        "raw_reward": 0.07538068212065863,
+        "normalized_reward": 0.11654448966436674
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            256,
+            512,
+            64,
+            "bidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.6085805296897888,
+        "raw_reward": -0.03821694933380915,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            700,
+            300,
+            300,
+            "bidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7378178238868713,
+        "raw_reward": 0.11342302316820263,
+        "normalized_reward": 0.18165273480735142
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            900,
+            16,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.16234110295772552,
+        "raw_reward": -0.4620536977609432,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            256,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7507944703102112,
+        "raw_reward": 0.12639966959154247,
+        "normalized_reward": 0.2024354934182906
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            300,
+            300,
+            300,
+            "bidirectional",
+            "stateless",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7972508668899536,
+        "raw_reward": 0.1728560661712849,
+        "normalized_reward": 0.27683777306384755
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            256,
+            16,
+            32,
+            "bidirectional",
+            "stateless",
+            9,
+            "vgg16"
+        ],
+        "accuracy": 0.5503568649291992,
+        "raw_reward": -0.07033481537722597,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            128,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7349046468734741,
+        "raw_reward": 0.11421296656704893,
+        "normalized_reward": 0.18400917906981284
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            512,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7673803567886353,
+        "raw_reward": 0.14668867648221007,
+        "normalized_reward": 0.23633098543573067
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            300,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.741525411605835,
+        "raw_reward": 0.12083373129940977,
+        "normalized_reward": 0.19467593188986934
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            8,
+            16,
+            0,
+            "bidirectional",
+            "statefull",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.29343220591545105,
+        "raw_reward": -0.35061451631383234,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            700,
+            32,
+            8,
+            "bidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7427967190742493,
+        "raw_reward": 0.09874999684496588,
+        "normalized_reward": 0.1533273804854141
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            256,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7694951295852661,
+        "raw_reward": 0.12544840735598273,
+        "normalized_reward": 0.19478153215698596
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            128,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.6898834705352783,
+        "raw_reward": 0.045836748305994934,
+        "normalized_reward": 0.07116991161793362
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            16,
+            32,
+            0,
+            "unidirectional",
+            "stateless",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.6841131448745728,
+        "raw_reward": 0.046109874930806094,
+        "normalized_reward": 0.07227216081140615
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            900,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7592690587043762,
+        "raw_reward": 0.12126578876060956,
+        "normalized_reward": 0.19007079501691393
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            300,
+            8,
+            16,
+            "unidirectional",
+            "stateless",
+            6,
+            "vgg16"
+        ],
+        "accuracy": 0.41686493158340454,
+        "raw_reward": -0.22113833836036212,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            32,
+            8,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.22298729419708252,
+        "raw_reward": -0.41501597574668414,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7552207112312317,
+        "raw_reward": 0.15237584006863736,
+        "normalized_reward": 0.25276127795448006
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            512,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.769759476184845,
+        "raw_reward": 0.16691460502225064,
+        "normalized_reward": 0.27687820362917875
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            32,
+            128,
+            64,
+            "unidirectional",
+            "stateless",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7845625281333923,
+        "raw_reward": 0.181717656970798,
+        "normalized_reward": 0.30143352897771153
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            1024,
+            256,
+            256,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7211334705352783,
+        "raw_reward": 0.11828859937268399,
+        "normalized_reward": 0.19621731064069786
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            900,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            12,
+            "vgg16"
+        ],
+        "accuracy": 0.6605868339538574,
+        "raw_reward": 0.01129471018368533,
+        "normalized_reward": 0.017395421518995265
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            1024,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7256355881690979,
+        "raw_reward": 0.07634346439892581,
+        "normalized_reward": 0.11757953252824442
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            700,
+            700,
+            16,
+            "bidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.5789194703102112,
+        "raw_reward": -0.07037265345996091,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            256,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8033307194709778,
+        "raw_reward": 0.1540385957008057,
+        "normalized_reward": 0.23724081971400313
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            16,
+            300,
+            32,
+            "bidirectional",
+            "stateless",
+            6,
+            "vgg16"
+        ],
+        "accuracy": 0.4853290915489197,
+        "raw_reward": -0.17681084098301159,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            512,
+            8,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.16551907360553741,
+        "raw_reward": -0.49662085892639385,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            256,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8001586198806763,
+        "raw_reward": 0.138018687348745,
+        "normalized_reward": 0.20844338265498707
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            512,
+            16,
+            0,
+            "bidirectional",
+            "statefull",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.6649894118309021,
+        "raw_reward": 0.002849479298970836,
+        "normalized_reward": 0.0043034397391567645
+    },
+    {
+        "sequence": [
+            3,
+            "lstm",
+            900,
+            32,
+            64,
+            "unidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7488765716552734,
+        "raw_reward": 0.126678904117969,
+        "normalized_reward": 0.20359913048053002
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            900,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8025376796722412,
+        "raw_reward": 0.18034001213493678,
+        "normalized_reward": 0.28984360037823503
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            128,
+            64,
+            0,
+            "unidirectional",
+            "statefull",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7036546468734741,
+        "raw_reward": 0.08145697933616969,
+        "normalized_reward": 0.13091816889235453
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            256,
+            256,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.6861758232116699,
+        "raw_reward": 0.06397815567436549,
+        "normalized_reward": 0.1028260937031671
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            900,
+            300,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.6579434275627136,
+        "raw_reward": 0.0018117061806511847,
+        "normalized_reward": 0.0027611927930552187
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            1024,
+            8,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.08474576473236084,
+        "raw_reward": -0.5713859566497016,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7745175957679749,
+        "raw_reward": 0.11838587438591242,
+        "normalized_reward": 0.18043004248979735
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            1024,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7693326473236084,
+        "raw_reward": 0.11320092594154596,
+        "normalized_reward": 0.17252774440755442
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            8,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "vgg16"
+        ],
+        "accuracy": 0.23288396000862122,
+        "raw_reward": -0.3978987026128218,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            900,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.5505826473236084,
+        "raw_reward": -0.0802000152978346,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            256,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7972508668899536,
+        "raw_reward": 0.1664682042685106,
+        "normalized_reward": 0.2639073869758907
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            128,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7692307829856873,
+        "raw_reward": 0.13844812036424425,
+        "normalized_reward": 0.21948624866594293
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            16,
+            300,
+            0,
+            "bidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.7393602728843689,
+        "raw_reward": 0.1215662897587686,
+        "normalized_reward": 0.1967748036716896
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            16,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.4176377058029175,
+        "raw_reward": -0.20015627732268282,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            256,
+            300,
+            0,
+            "bidirectional",
+            "stateless",
+            9,
+            "vgg16"
+        ],
+        "accuracy": 0.6307163834571838,
+        "raw_reward": 0.012922400331583539,
+        "normalized_reward": 0.02091700580202099
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            128,
+            300,
+            8,
+            "bidirectional",
+            "stateless",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.5477134585380554,
+        "raw_reward": -0.07008052458754488,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            16,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.05270127207040787,
+        "raw_reward": -0.5549116026687018,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            1024,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.7145127058029175,
+        "raw_reward": 0.10689983106380785,
+        "normalized_reward": 0.17593411115936927
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            8,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.4356461763381958,
+        "raw_reward": -0.17196669840091383,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            16,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7911710143089294,
+        "raw_reward": 0.1835581395698198,
+        "normalized_reward": 0.3020971858412716
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            32,
+            300,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.2486758530139923,
+        "raw_reward": -0.3262054969424182,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7864128947257996,
+        "raw_reward": 0.21153154476938907,
+        "normalized_reward": 0.36795687449007075
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.6935911178588867,
+        "raw_reward": 0.11870976790247623,
+        "normalized_reward": 0.20649437991131175
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            256,
+            300,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.710540235042572,
+        "raw_reward": 0.13565888508616153,
+        "normalized_reward": 0.23597718915885849
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.743325412273407,
+        "raw_reward": 0.15796695975582586,
+        "normalized_reward": 0.2698636349222189
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            64,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.18776482343673706,
+        "raw_reward": -0.39759362908084406,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7693326473236084,
+        "raw_reward": 0.18397419480602728,
+        "normalized_reward": 0.3142932232093673
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            1024,
+            300,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7616525292396545,
+        "raw_reward": 0.17629407672207342,
+        "normalized_reward": 0.30117285559596696
+    },
+    {
+        "sequence": [
+            2,
+            "lstm",
+            32,
+            300,
+            0,
+            "unidirectional",
+            "statefull",
+            9,
+            "vgg16"
+        ],
+        "accuracy": 0.2462923675775528,
+        "raw_reward": -0.3481142051052595,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7131885886192322,
+        "raw_reward": 0.1187820159364199,
+        "normalized_reward": 0.19983294494931697
+    },
+    {
+        "sequence": [
+            3,
+            "gru",
+            32,
+            300,
+            256,
+            "unidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7330161333084106,
+        "raw_reward": 0.13860956062559837,
+        "normalized_reward": 0.23318981816885853
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            256,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            12,
+            "vgg16"
+        ],
+        "accuracy": 0.6320380568504333,
+        "raw_reward": 0.037631484167621077,
+        "normalized_reward": 0.06330933386460227
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            8,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.5810203552246094,
+        "raw_reward": -0.009404381630031322,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            900,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8041236996650696,
+        "raw_reward": 0.21369896281042888,
+        "normalized_reward": 0.3619410729853046
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            128,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7959291338920593,
+        "raw_reward": 0.20550439703741863,
+        "normalized_reward": 0.34806196992590854
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            128,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7779539823532104,
+        "raw_reward": 0.18752924549856975,
+        "normalized_reward": 0.3176175281303918
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            9,
+            "vgg16"
+        ],
+        "accuracy": 0.5182732939720154,
+        "raw_reward": -0.11695105966135422,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.12288135290145874,
+        "raw_reward": -0.5123430007319109,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            128,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8091461658477783,
+        "raw_reward": 0.17392181221440872,
+        "normalized_reward": 0.2737958820253466
+    },
+    {
+        "sequence": [
+            2,
+            "gru",
+            8,
+            64,
+            0,
+            "bidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.42213982343673706,
+        "raw_reward": -0.21308453019663254,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            256,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.6399682760238647,
+        "raw_reward": 0.054878180768656915,
+        "normalized_reward": 0.0937944108169194
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            8,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.13850635290145874,
+        "raw_reward": -0.4465837423537491,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            512,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8012159466743469,
+        "raw_reward": 0.2161258514191391,
+        "normalized_reward": 0.36938901057268664
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            512,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7068326473236084,
+        "raw_reward": 0.12174255206840057,
+        "normalized_reward": 0.20807488117619002
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            12,
+            "vgg16"
+        ],
+        "accuracy": 0.47819191217422485,
+        "raw_reward": -0.1028603962236665,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.5395188927650452,
+        "raw_reward": -0.04153341563284618,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            1024,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7216631174087524,
+        "raw_reward": 0.1406108090108611,
+        "normalized_reward": 0.24199337470039733
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7110699415206909,
+        "raw_reward": 0.13001763312279957,
+        "normalized_reward": 0.22376235533581296
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7628865838050842,
+        "raw_reward": 0.17236667813640683,
+        "normalized_reward": 0.2918896999958669
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "vgg16"
+        ],
+        "accuracy": 0.08818855881690979,
+        "raw_reward": -0.5023313468517676,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            128,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8004229664802551,
+        "raw_reward": 0.20990306081157772,
+        "normalized_reward": 0.35545467436588396
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            64,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.7480835318565369,
+        "raw_reward": 0.15756362618785946,
+        "normalized_reward": 0.26682187111501265
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            900,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.7761036157608032,
+        "raw_reward": 0.1827710587208201,
+        "normalized_reward": 0.30804151318077677
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7906423211097717,
+        "raw_reward": 0.19730976406978862,
+        "normalized_reward": 0.3325449812174017
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.5799788236618042,
+        "raw_reward": -0.013353733378178911,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            64,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.5664724707603455,
+        "raw_reward": -0.02686008627963765,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            64,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.614855945110321,
+        "raw_reward": -0.003966637164621423,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7803330421447754,
+        "raw_reward": 0.16151045986983292,
+        "normalized_reward": 0.26099638970830946
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            128,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7465571761131287,
+        "raw_reward": 0.1277345938381862,
+        "normalized_reward": 0.2064155340743403
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.7174258232116699,
+        "raw_reward": 0.09860324093672745,
+        "normalized_reward": 0.15934008186692852
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.449417382478714,
+        "raw_reward": -0.19819632410723786,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            6,
+            "vgg16"
+        ],
+        "accuracy": 0.5129767060279846,
+        "raw_reward": -0.13463700055796723,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7753105759620667,
+        "raw_reward": 0.1276968693761148,
+        "normalized_reward": 0.19718061563208852
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "vgg16"
+        ],
+        "accuracy": 0.0730932205915451,
+        "raw_reward": -0.5745204859944067,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.71875,
+        "raw_reward": 0.12961056401031046,
+        "normalized_reward": 0.2199998100120033
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8091461658477783,
+        "raw_reward": 0.22000672985808878,
+        "normalized_reward": 0.373437451952538
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            128,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.6671080589294434,
+        "raw_reward": 0.07796862293975382,
+        "normalized_reward": 0.1323432419619657
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.8046523928642273,
+        "raw_reward": 0.21551295687453775,
+        "normalized_reward": 0.3658097619554506
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.40280720591545105,
+        "raw_reward": -0.23456464560044032,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.7472904920578003,
+        "raw_reward": 0.10991864054190892,
+        "normalized_reward": 0.17245606354161805
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            64,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            9,
+            "vgg16"
+        ],
+        "accuracy": 0.5318530201911926,
+        "raw_reward": -0.10551883132469875,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            128,
+            0,
+            0,
+            "bidirectional",
+            "stateless",
+            9,
+            "resnet50"
+        ],
+        "accuracy": 0.7750462889671326,
+        "raw_reward": 0.1376744374512412,
+        "normalized_reward": 0.21600332223991894
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.743325412273407,
+        "raw_reward": 0.11289034067741477,
+        "normalized_reward": 0.17906735482484806
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            64,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.5940148234367371,
+        "raw_reward": -0.03642024815925515,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7290784120559692,
+        "raw_reward": 0.09864334045997702,
+        "normalized_reward": 0.1564686751874501
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            8,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.5762622356414795,
+        "raw_reward": -0.05417283595451272,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            128,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            6,
+            "resnet50"
+        ],
+        "accuracy": 0.774253249168396,
+        "raw_reward": 0.13474763279563207,
+        "normalized_reward": 0.2107059411594251
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            512,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            12,
+            "resnet50"
+        ],
+        "accuracy": 0.7724028825759888,
+        "raw_reward": 0.13289726620322484,
+        "normalized_reward": 0.20781250825634434
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            512,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.7798044085502625,
+        "raw_reward": 0.14029879217749852,
+        "normalized_reward": 0.21938633307292266
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "stateless",
+            3,
+            "resnet50"
+        ],
+        "accuracy": 0.752312958240509,
+        "raw_reward": 0.1128073418677451,
+        "normalized_reward": 0.17639773437791142
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            3,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7462923526763916,
+        "raw_reward": 0.06773040882532011,
+        "normalized_reward": 0.09981462920090298
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            32,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            6,
+            "inceptionV3"
+        ],
+        "accuracy": 0.5842161178588867,
+        "raw_reward": -0.09434582599218477,
+        "normalized_reward": 0.0
+    },
+    {
+        "sequence": [
+            1,
+            "gru",
+            700,
+            0,
+            0,
+            "bidirectional",
+            "statefull",
+            12,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7653601765632629,
+        "raw_reward": 0.08679823271219145,
+        "normalized_reward": 0.1279149729600075
+    },
+    {
+        "sequence": [
+            1,
+            "lstm",
+            128,
+            0,
+            0,
+            "unidirectional",
+            "statefull",
+            9,
+            "inceptionV3"
+        ],
+        "accuracy": 0.7470868825912476,
+        "raw_reward": 0.06852493874017607,
+        "normalized_reward": 0.1009855317573146
+    }
+]

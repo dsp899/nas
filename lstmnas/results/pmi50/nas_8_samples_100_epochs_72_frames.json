@@ -1,0 +1,14 @@
+{
+    "metadata": {
+        "total_controller_epochs": 100,
+        "samples_per_epoch": 8,
+        "controller_train_epochs": 5,
+        "architecture_train_epochs": 3,
+        "start_time": "2025-04-30 01:29:31.433054",
+        "dataset": "pmi50",
+        "last_update": "2025-04-30 01:29:31.433066"
+    },
+    "controller_epochs": [],
+    "architectures": [],
+    "top_architectures": []
+}

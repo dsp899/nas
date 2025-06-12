@@ -1,0 +1,28 @@
+{
+    "metadata": {
+        "start_time": "2025-05-13 19:00:54.847124",
+        "last_update": "2025-05-13 19:00:54.847131",
+        "status": "running",
+        "parameters": {
+            "controller_sampling_epochs": 200,
+            "controller_samples_per_epoch": 8,
+            "controller_train_epochs": 5,
+            "architecture_train_epochs": 1,
+            "controller_loss_alpha": 0.9,
+            "dataset": "all",
+            "frames": 72
+        }
+    },
+    "statistics": {
+        "global": {
+            "accuracies": [],
+            "rewards": [],
+            "normalized_rewards": [],
+            "baselines": [],
+            "cumulative_stats": []
+        },
+        "per_epoch": []
+    },
+    "architectures": [],
+    "best_architectures": []
+}
