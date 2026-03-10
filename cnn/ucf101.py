@@ -103,9 +103,9 @@ class Frames():
 
     def __init__(self, split, config, num_classes):
         self.dataset = pd.DataFrame(split)
-        self.frames = config.data['frames'] if config.op == 'train' else config.predict_frames
+        self.frames = config.data['num_train_frames'] if config.op == 'train' else  config.data['num_predict_frames']
         self.size = (config.data['size'],config.data['size'])
-        self.batch = config.cnn['batch']
+        self.batch = config.metadata['batch']
         self.num_classes = num_classes
         self.generate()
 

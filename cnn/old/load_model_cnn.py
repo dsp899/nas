@@ -7,10 +7,6 @@ import tensorflow.compat.v1 as tf
 import numpy as np 
 import utils
 
-
-tf.disable_eager_execution()
-print(tf.__version__)
-
 class model():
     TARGETS = dict({'ALVEO': 'DPUCAHX8H_ISA2_ELP2', 'ZCU102': 'DPUCZDX8G_ISA0_B4096_MAX_BG2'})
 

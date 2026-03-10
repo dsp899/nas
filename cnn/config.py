@@ -4,15 +4,18 @@ import tensorflow as tf
 batch=16
 epochs=10
 learning_rate=0.001
-predict_frames=36
+dense_units = 2048
+dropout = 0.5
+num_predict_frames=36
 logical_cores=multiprocessing.cpu_count()
 
 class Config():
-    def __init__(self,operation,cnn,data,frames,size):
+    def __init__(self,operation,cnn,data,num_train_frames,size):
         self.op = operation
-        self.data = {'name':data,'frames':frames, 'size':size} 
-        self.cnn = {'name':cnn,'batch':batch,'epochs':epochs,'lr':learning_rate}
-        self.predict_frames = predict_frames
+        self.data = {'name':data,'num_train_frames':num_train_frames,'num_predict_frames':num_predict_frames, 'size':size} 
+        self.arch = {'cnn':cnn, 'dense_units': dense_units, 'dropout': dropout} 
+        self.metadata = {'batch':batch,'epochs':epochs,'lr':learning_rate}
+
 
     @staticmethod 
     def config_device(gpu_):

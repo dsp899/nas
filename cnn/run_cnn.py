@@ -34,7 +34,7 @@ def run_main():
     # Argumentos de la línea de comandos
     ap = argparse.ArgumentParser()
     ap.add_argument('-o', '--operation', type=str, default='', help='{train | eval | predict}')
-    ap.add_argument('-a', '--cnn', type=str, default='', help='{vgg16 | resnet50 | inception_v3}')
+    ap.add_argument('-a', '--cnn', type=str, default='', help='{vgg16 | resnet50 | inceptionV3}')
     ap.add_argument('-d', '--data', type=str, default='all', help='{all | all50 | pmi | pmi50}')
     ap.add_argument('-f', '--frames', type=int, default=15, help='{72 | 36 | 24}')
     ap.add_argument('-s', '--size', type=int, default=299, help='max 299')
@@ -53,15 +53,15 @@ def run_main():
     print('-------------------------------------')
     config.Config.config_device(args.gpu)
     if args.operation == 'train':
-        cfg = config.Config(operation=args.operation,cnn=args.cnn,data=args.data,frames=args.frames,size=args.size)
+        cfg = config.Config(operation=args.operation,cnn=args.cnn,data=args.data,num_train_frames=args.frames,size=args.size)
         train_cnn(cfg)
 
     elif args.operation == 'eval':
-        cfg = config.Config(operation=args.operation,cnn=args.cnn,data=args.data,frames=args.frames,size=args.size)
+        cfg = config.Config(operation=args.operation,cnn=args.cnn,data=args.data,num_train_frames=args.frames,size=args.size)
         eval_cnn(cfg)
 
     elif args.operation == 'predict':
-        cfg = config.Config(operation=args.operation,cnn=args.cnn,data=args.data,frames=args.frames,size=args.size)
+        cfg = config.Config(operation=args.operation,cnn=args.cnn,data=args.data,num_train_frames=args.frames,size=args.size)
         predict_cnn(cfg)
 
 

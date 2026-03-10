@@ -2,7 +2,7 @@ import argparse
 import load_data
 import load_model_cnn as lm
 import config
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 def train_cnn(config_data,config_model,config_op):
     dataset = load_data.ucf101_frames(name=config_data.name,frames=config_data.frames,size=config_data.size)
@@ -116,6 +116,7 @@ def run_main():
 if __name__ == '__main__':
     print('tf version: ', tf.__version__)
     print('tf.keras version:', tf.keras.__version__)
-    tf.compat.v1.set_random_seed(264)
+    tf.set_random_seed(264)
+    tf.disable_eager_execution()
     #tf.keras.utils.set_random_seed(1337)
     run_main()

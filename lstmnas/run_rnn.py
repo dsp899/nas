@@ -98,7 +98,7 @@ def train_lstm(cfg):
 
 def eval_lstm(cfg):
     test_sequences = ucf101.Sequences(mode='test',config=cfg)
-    model = rnn.Model(config=cfg,num_sequences=train_sequences.num_sequences,num_features=train_sequences.num_features,num_classes=train_sequences.num_classes)
+    model = rnn.Model(config=cfg,num_sequences=test_sequences.num_sequences,num_features=test_sequences.num_features,num_classes=test_sequences.num_classes)
     metrics = model.evaluate(data=test_sequences.data_test)
     return metrics['acc']
 
