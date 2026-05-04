@@ -1,0 +1,84 @@
+{
+  "dataset": {
+    "name": "pmi50",
+    "split": "split01"
+  },
+  "partition": {
+    "mode": "train_test",
+    "val_fraction": 0.3
+  },
+  "preprocess": {
+    "image_size": 224,
+    "frames": 36,
+    "sampling": "uniform",
+    "resize_mode": "pad"
+  },
+  "feature_source": {
+    "cnn": "inceptionV3",
+    "cnn_training_signature": "",
+    "cnn_feature_export_signature": ""
+  },
+  "model": {
+    "encoder": {
+      "rnn": "gru",
+      "direction": "unidirectional",
+      "units": [32, 0, 0],
+      "memory_mode": "none",
+      "seq_length": 6
+    },
+    "head": {
+      "hidden_units": [256],
+      "dropouts": [0.5]
+    },
+    "decision": {
+      "video_decision": "average",
+      "video_decision_input": "clip_logits"
+    }
+  },
+  "training": {
+    "epochs": 10,
+    "batch_size": 32,
+    "test_strategy": "average",
+    "allow_epoch_extension_resume": false,
+    "optimizer": {
+      "name": "adagrad",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "nesterov": true,
+      "weight_decay": 0.0
+    },
+    "scheduler": {
+      "reduce_lr_on_plateau": false,
+      "reduce_lr_factor": 0.5,
+      "reduce_lr_patience": 2,
+      "min_learning_rate": 1e-06
+    }
+  },
+  "runtime": {
+    "gpu": "0",
+    "mixed_precision": true,
+    "random_seed": 1337,
+    "project_root": "."
+  },
+  "deploy": {
+    "action": "export",
+    "force": false,
+    "signatures": {
+      "experiment": null,
+      "export": null
+    },
+    "export": {
+      "runtime": "tflite",
+      "tflite_precision": "fp32"
+    },
+    "test": {
+      "test_split": "test",
+      "save_clip_predictions": false,
+      "save_video_predictions": true
+    },
+    "pipeline": {
+      "cnn_deploy_signature": null,
+      "save_quantized_sequences": true
+    }
+  }
+}

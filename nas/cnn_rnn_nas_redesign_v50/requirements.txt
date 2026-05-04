@@ -1,0 +1,8 @@
+numpy
+pandas
+tqdm
+psutil
+matplotlib
+opencv-python-headless
+tensorflow>=2.10,<2.12
+tensorflow-model-optimization>=0.7,<0.8

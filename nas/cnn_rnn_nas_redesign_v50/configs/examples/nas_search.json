@@ -1,0 +1,89 @@
+{
+  "data_source": {
+    "dataset": {
+      "name": "pmi50",
+      "split": "split01"
+    },
+    "partition": {
+      "mode": "train_test",
+      "val_fraction": 0.3
+    },
+    "preprocess": {
+      "image_size": 224,
+      "frames": 36,
+      "sampling": "uniform",
+      "resize_mode": "pad"
+    },
+    "feature_source": {
+      "cnn": "inceptionV3",
+      "cnn_training_signature": "",
+      "cnn_feature_export_signature": ""
+    }
+  },
+  "architecture_training": {
+    "epochs": 10,
+    "batch_size": 32,
+    "allow_epoch_extension_resume": false,
+    "optimizer": {
+      "name": "adagrad",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "nesterov": true,
+      "weight_decay": 0.0
+    },
+    "scheduler": {
+      "reduce_lr_on_plateau": false,
+      "reduce_lr_factor": 0.5,
+      "reduce_lr_patience": 2,
+      "min_learning_rate": 1e-06
+    }
+  },
+  "runtime": {
+    "gpu": "0",
+    "mixed_precision": true,
+    "random_seed": 1337,
+    "project_root": "."
+  },
+  "controller": {
+    "model": {
+      "lstm_dim": 64
+    },
+    "optimizer": {
+      "name": "adam",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "nesterov": true,
+      "weight_decay": 0.0
+    },
+    "scheduler": {
+      "reduce_lr_on_plateau": false,
+      "reduce_lr_factor": 0.5,
+      "reduce_lr_patience": 2,
+      "min_learning_rate": 1e-06
+    },
+    "training": {
+      "sampling_epochs": 200,
+      "samples_per_epoch": 8,
+      "training_epochs": 5,
+      "reward_baseline_strategy": "ema",
+      "reward_baseline_ema_decay": 0.7,
+      "reward_standardize_advantage": true,
+      "rolling_window": null,
+      "rolling_window_multiplier": 8
+    }
+  },
+  "search_space": {
+    "layers": [1, 2, 3],
+    "rnn": ["gru", "lstm"],
+    "units_0": [8, 16, 32, 64, 128, 256, 300, 512, 700, 900, 1024],
+    "units_1": [0, 8, 16, 32, 64, 128, 256, 300, 512, 700, 900, 1024],
+    "units_2": [0, 8, 16, 32, 64, 128, 256, 300, 512, 700, 900, 1024],
+    "direction": ["unidirectional", "bidirectional"],
+    "memory_mode": ["none", "carry_forward"],
+    "seq": [3, 6, 9, 12],
+    "head_units": [64, 128, 256, 512, 1024],
+    "video_decision": ["average", "majority", "max_prob"],
+    "video_decision_input": ["clip_logits", "clip_embeddings"],
+    "cnn": ["vgg16", "resnet50", "inceptionV3"]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "dataset": {
+    "name": "pmi50",
+    "split": "split01",
+    "partition_mode": "train_test",
+    "val_fraction": 0.3
+  },
+  "preprocess": {
+    "image_size": 224,
+    "train_frames": 15,
+    "predict_frames": 36,
+    "sampling": "uniform",
+    "resize_mode": "pad",
+    "shuffle_buffer_videos": 1024,
+    "shuffle_buffer_frames": 5000,
+    "augmentation_enabled": false,
+    "random_flip": false,
+    "random_crop_scale_min": 0.85,
+    "brightness_delta": 0.15,
+    "contrast_lower": 0.85,
+    "contrast_upper": 1.15,
+    "saturation_lower": 0.85,
+    "saturation_upper": 1.15
+  },
+  "extractor": {
+    "backbone": "inceptionV3",
+    "weights": "imagenet",
+    "trainable": true,
+    "feature_dim": 512
+  },
+  "head": {
+    "hidden_units": [1024],
+    "dropouts": [0.5]
+  },
+  "training": {
+    "epochs": 10,
+    "batch_size": 16,
+    "feature_batch_size": 1,
+    "early_stopping_patience": 5,
+    "optimizer": {
+      "name": "adagrad",
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "nesterov": true,
+      "weight_decay": 0.0
+    },
+    "scheduler": {
+      "reduce_lr_on_plateau": false,
+      "reduce_lr_factor": 0.5,
+      "reduce_lr_patience": 2,
+      "min_learning_rate": 1e-06
+    }
+  },
+  "runtime": {
+    "gpu": "0",
+    "mixed_precision": true,
+    "random_seed": 1337,
+    "project_root": "."
+  },
+  "deploy": {
+    "action": "export",
+    "execute_tools": false,
+    "force": false,
+    "signatures": {
+      "training": null,
+      "deploy": null
+    },
+    "vitis_ai": {
+      "vitis_ai_version": "3.0",
+      "target_board": "zcu102",
+      "output_layer": "frame_features",
+      "calibration_split": "train",
+      "calibration_samples": 128,
+      "arch_json": "/opt/vitis_ai/compiler/arch/DPUCZDX8G/ZCU102/arch.json"
+    },
+    "test": {
+      "test_split": "test",
+      "video_aggregation": "mean_probs",
+      "save_frame_predictions": false,
+      "save_video_predictions": true,
+      "quantized_model_path": null
+    }
+  }
+}
