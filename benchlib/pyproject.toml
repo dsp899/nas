@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "benchlib"
+version = "0.6.65"
+description = "Bench libraries for RNN, CNN and hybrid CNN-RNN deployment flows"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "psutil",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+  "benchlib_common*",
+  "rnn_benchlib*",
+  "cnn_benchlib*",
+  "hybrid_benchlib*",
+]
+
+
+[project.optional-dependencies]
+gnn = [
+  "tensorflow>=2.10,<2.11",
+]

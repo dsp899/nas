@@ -1,0 +1,109 @@
+{
+  "LOT": {
+    "search_space": {
+      "layers": [1, 2, 3],
+      "rnn": ["lstm", "gru"],
+      "units_0": [8, 16, 32, 64, 128, 256, 300, 512, 700, 900, 1024],
+      "units_1": [0, 8, 16, 32, 64, 128, 256, 300, 512, 700, 900, 1024],
+      "units_2": [0, 8, 16, 32, 64, 128, 256, 300, 512, 700, 900, 1024],
+      "direction": ["unidirectional", "bidirectional"],
+      "memory_mode": ["none", "carry_forward"],
+      "seq": [3, 6, 9, 12],
+      "head_units": [64, 128, 256, 512, 1024],
+      "video_decision": ["average", "majority", "max_prob"],
+      "video_decision_input": ["clip_logits", "clip_embeddings"]
+    },
+    "generation_seed": 1234,
+    "requested_count": 1000,
+    "experiment": {
+      "dataset_profile": "ucf101",
+      "num_classes": 101,
+      "feature_dim": 512,
+      "video_steps": 36
+    }
+  },
+  "STORAGE": {
+    "persist_float_model": false,
+    "persist_tflite_model": true
+  },
+  "RESOURCE_MANAGER": {
+    "max_ram_fraction": 0.7,
+    "ram_reserve_mb": 32768,
+    "generation_estimated_worker_ram_mb": 2200,
+    "benchmark_estimated_worker_ram_mb": 5500
+  },
+  "GENERATION": {
+    "runtime": {
+      "jobs": "auto",
+      "worker_max_tasks": 4,
+      "intra_op_threads": 1,
+      "inter_op_threads": 1
+    }
+  },
+  "BENCHMARK": {
+    "signature": {
+      "feature_source": "synthetic",
+      "num_videos": 8,
+      "feature_seed": 1234,
+      "distribution": "normal",
+      "warmup_runs": 5,
+      "steady_runs": 10,
+      "threads": 1,
+      "hardware_target": "fenix_cpu",
+      "experiment_name": "bench_default"
+    },
+    "runtime": {
+      "runtime": "tflite",
+      "jobs": "auto",
+      "cpu_policy": "none",
+      "cpu_reserve_cores": 1,
+      "worker_max_tasks": 4
+    }
+  },
+  "DATASET": {},
+  "SPLIT": {
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "seed": 1234
+  },
+  "GNN": {
+    "run_name": "latency_gnn_baseline",
+    "seed": 1234,
+    "model": {
+      "hidden_dim": 96,
+      "graph_hidden_dim": 64,
+      "num_layers": 3,
+      "dropout": 0.1,
+      "embedding_dim": 16,
+      "graph_embedding_dim": 8,
+      "readout_dim": 64
+    },
+    "training": {
+      "epochs": 40,
+      "batch_size": 8,
+      "weight_decay": 0.0001,
+      "shuffle_train": true,
+      "val_interval_epochs": 1
+    },
+    "optimizer": {
+      "name": "adam",
+      "learning_rate": 0.001,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-07,
+      "amsgrad": false,
+      "clipnorm": null,
+      "clipvalue": null
+    },
+    "runtime": {
+      "device": "gpu",
+      "gpu_index": 0,
+      "memory_growth": true,
+      "mixed_precision": true,
+      "enable_xla": false,
+      "batch_progress": true,
+      "batch_log_interval": 1
+    }
+  }
+}

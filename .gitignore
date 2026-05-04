@@ -1,16 +1,16 @@
-datasets/
+cnn/
+lstmnas/
 draw/
-benchlib_parallel_internal_generation/
 
 mount.sh
 token.txt
 
-cnn/
-lstmnas/
-
 __pycache__/
 *.pyc
 
+datasets/
+
+benchlib/**/artifacts/
 nas/**/artifacts/
 
 nas/cnn_rnn_nas_sync_rnnbenchlib_0.24.1/
